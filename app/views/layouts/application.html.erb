@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title><%= content_for?(:title) ? yield(:title) : "Gimnasio Cristiano Shekinah" %></title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= csrf_meta_tags %>
+
+
+
+
+
+  </head>
+
+  <body class="page-sub-page page-microsite">
+<!-- Wrapper -->
+<div class="wrapper">
+<!-- Header -->
+<div class="navigation-wrapper">
+    <div class="secondary-navigation-wrapper">
+        <div class="container">
+             <div class="navigation-contact pull-left">Atención a Usuarios:   <span class="opacity-70">Horario de 9:00 a.m. - 3:00 p.m. | Carrera 14 A No. 70-32 | Teléfonos 2172018 2128235</span></div>
+        </div>
+    </div><!-- /.secondary-navigation -->
+
+    <div class="branding">
+        <div class="container">
+            <div class="navbar-brand nav" id="brand">
+               <a href="/"> <%= image_tag "logo.png"%></a>
+            </div>
+           
+        </div>
+    </div>
+
+    <div class="primary-navigation-wrapper">
+        <header class="navbar" id="top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#">Home</a>
+                        </li>
+                        
+
+                            <li><%= link_to 'Historia- Fines',static_pages_history_path%> 
+                                </li>
+
+                                <li>                        <%= link_to 'Metodología', static_pages_metodoloy_path%> 
+                                </li>
+
+                                 <li>                        <%= link_to 'Nuestro PEI', static_pages_our_pei_path%> 
+                                </li>
+                                                   
+                        <li>
+                        <%= link_to 'Sección Preescolar', static_pages_sections_pre_path%> 
+
+                   </li>
+                        <li>
+                            <%= link_to 'Acción Educativa', static_pages_contact_path%> 
+                        </li>
+                        <li>
+
+
+                            <%= link_to 'Actividades', static_pages_activity_path%> 
+                        </li>
+                        <li>
+<%= link_to 'Contáctenos', static_pages_contact_path%>                        </li>
+                       
+                    </ul>
+                </nav><!-- /.navbar collapse-->
+                
+            </div><!-- /.container -->
+        </header><!-- /.navbar -->
+    </div><!-- /.primary-navigation -->
+</div>
+<!-- end Header -->
+
+    
+        <%= yield %>
+
+    <!-- Footer -->
+<footer id="page-footer">
+   
+
+    <section id="footer-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <aside class="logo">
+                        <%= image_tag "logo.png", html: {class: "vertical-center"} %>
+                    </aside>
+                </div><!-- /.col-md-3 -->
+                <div class="col-md-3 col-sm-4">
+                    <aside>
+                        <header><h4>Contáctenos</h4></header>
+                        <address>
+                            <strong>Gimnasio Cristiano Shekinah</strong>
+                            <br>
+                            <span>Carrera 14 A No. 70-32 </span>
+                            <br><br>
+                            <span>Horario de 9:00 a.m. - 3:00 p.m.</span>
+                            <br>
+                            <abbr title="Telephone">Teléfono:</abbr> 2172018 2128235
+                            <br>
+                            <abbr title="Email">Email:</abbr> <a href="#">info@gimnasiocristianoshekinah.com</a>
+                        </address>
+                    </aside>
+                </div><!-- /.col-md-3 -->
+                <div class="col-md-3 col-sm-4">
+                    <aside>
+                        <header><h4>Important Links</h4></header>
+                        <ul class="list-links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Quienes Somos</a></li>
+                            <li><a href="#">Sección Preescolar</a></li>
+                            <li><a href="#">Acción Educativa</a></li>
+                            <li><a href="#">Actividades</a></li>
+                            <li><a href="#">Contáctenos</a></li>
+                        </ul>
+                    </aside>
+                </div><!-- /.col-md-3 -->
+                <div class="col-md-3 col-sm-4">
+                    <aside>
+                        <header><h4>Gimnasio Cristianos Shekinah</h4></header>
+                        <h5>La presencia permanente del todo poderoso Dios 
+                        </h5>
+                        <div>
+                            
+                        </div>
+                    </aside>
+                </div><!-- /.col-md-3 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+        <div class="background"><img src="assets/img/background-city.png" class="" alt=""></div>
+    </section><!-- /#footer-content -->
+
+    <section id="footer-bottom">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="copyright">© Gimnasio Cristiano Shekinah, All rights reserved</div><!-- /.copyright -->
+            </div><!-- /.footer-inner -->
+        </div><!-- /.container -->
+    </section><!-- /#footer-bottom -->
+
+</footer>
+<!-- end Footer -->
+
+</div>
+<!-- end Wrapper -->
+
+<script type="text/javascript" src="assets/js/custom.js"></script>
+    <%= javascript_include_tag "application" %>
+
+<script type="text/javascript" src="assets/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/selectize.min.js"></script>
+<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.placeholder.js"></script>
+<script type="text/javascript" src="assets/js/jQuery.equalHeights.js"></script>
+<script type="text/javascript" src="assets/js/icheck.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.vanillabox-0.1.5.min.js"></script>
+<script type="text/javascript" src="assets/js/retina-1.1.0.min.js"></script>
+
+
+  </body>
+</html>
