@@ -1,4 +1,6 @@
 Micropost::Application.routes.draw do
+  resources :actividades
+
   get "static_pages/about"
   get "static_pages/history"
   get "static_pages/metodoloy"
