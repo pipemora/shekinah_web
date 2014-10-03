@@ -50,7 +50,7 @@
                 <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
                     <ul class="nav navbar-nav">
                         <li class="active">
-                            <a href="#">Home</a>
+                            <a href="/">Home</a>
                         </li>
                         
 
@@ -64,19 +64,20 @@
                                 </li>
                                                    
                         <li>
-                        <%= link_to 'Sección Preescolar', static_pages_sections_pre_path%> 
+                        <%= link_to 'Preescolar', static_pages_sections_pre_path%> 
 
                    </li>
                         <li>
-                            <%= link_to 'Acción Educativa', static_pages_contact_path%> 
+                            <%= link_to 'Acción Educativa', static_pages_accion_path%> 
                         </li>
                         <li>
 
 
-                            <%= link_to 'Actividades', static_pages_activity_path%> 
+                            <%= link_to 'Actividades', actividades_path%> 
                         </li>
                         <li>
-<%= link_to 'Contáctenos', static_pages_contact_path%>                        </li>
+
+                            <%= link_to 'Contáctenos', static_pages_contact_path%>                        </li>
                        
                     </ul>
                 </nav><!-- /.navbar collapse-->
@@ -123,11 +124,11 @@
                         <header><h4>Important Links</h4></header>
                         <ul class="list-links">
                             <li><a href="#">Home</a></li>
-                            <li><a href="#">Quienes Somos</a></li>
-                            <li><a href="#">Sección Preescolar</a></li>
-                            <li><a href="#">Acción Educativa</a></li>
-                            <li><a href="#">Actividades</a></li>
-                            <li><a href="#">Contáctenos</a></li>
+                            <li>   <%= link_to 'Metodología', static_pages_metodoloy_path%> </li>
+                            <li><%= link_to 'Preescolar', static_pages_sections_pre_path%></li>
+                            <li> <%= link_to 'Acción Educativa', static_pages_accion_path%></li>
+                            <li> <%= link_to 'Actividades', actividades_path%> </li>
+                            <li><%= link_to 'Contáctenos', static_pages_contact_path%></li>
                         </ul>
                     </aside>
                 </div><!-- /.col-md-3 -->
