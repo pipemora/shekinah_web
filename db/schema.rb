@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140725211901) do
+ActiveRecord::Schema.define(version: 20141002004450) do
+
+  create_table "actividades", force: true do |t|
+    t.string   "nombre"
+    t.string   "description"
+    t.string   "fecha"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "posts", force: true do |t|
     t.text     "content"
