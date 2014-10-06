@@ -88,45 +88,25 @@
                 <section class="events small" id="events-small">
                     <header>
                         <h2>Actividades</h2>
-                        <a href="" class="link-calendar">Calendar</a>
+                      
                     </header>
                     <div class="section-content">
+                         <% @activities.each do |activity| %>
+
                         <article class="event nearest">
                             <figure class="date">
-                                <div class="month">jan</div>
-                                <div class="day">18</div>
+                                <div class="month"><%= activity.mes %></div>
+                                <div class="day"><%= activity.dia %></div>
                             </figure>
                             <aside>
                                 <header>
-                                    <a href="#">Semana Cultural</a>
+                                    <a href="#"><%= activity.name %></a>
                                 </header>
-                                <div class="additional-info">Matthaei Botanical Gardens</div>
+                                <div class="additional-info"><%= activity.description %></div>
                             </aside>
                         </article><!-- /article -->
-                        <article class="event nearest-second">
-                            <figure class="date">
-                                <div class="month">feb</div>
-                                <div class="day">01</div>
-                            </figure>
-                            <aside>
-                                <header>
-                                    <a href="#">Día de la Familia Shekinah </a>
-                                </header>
-                                <div class="additional-info clearfix" >Pitt Rivers and Natural History Museums</div>
-                            </aside>
-                        </article><!-- /article -->
-                        <article class="event">
-                            <figure class="date">
-                                <div class="month">mar</div>
-                                <div class="day">23</div>
-                            </figure>
-                            <aside>
-                                <header>
-                                    <a href="#"></a>
-                                </header>
-                                <div class="additional-info">Faculty of Music</div>
-                            </aside>
-                        </article><!-- /article -->
+                       <%end%>
+                       
                     </div><!-- /.section-content -->
                 </section><!-- /.events-small -->
             </div><!-- /.col-md-3 -->
@@ -171,18 +151,15 @@
                         <h2>Noticias</h2>
                     </header>
                     <div class="section-content">
+                        
+                        <% @noticia.each do |noticium| %>
+                        
                         <article>
-                            <figure class="date"><i class="fa fa-file-o"></i>08-24-2014</figure>
-                            <header><a href="#">U-M School of Public Health, Detroit partners aim to improve air quality in the city</a></header>
+                            <figure class="date"><i class="fa fa-file-o"></i><%= noticium.created_at.strftime("%d %b. %Y") %></figure>
+                            <header><a href="#"><%= noticium.description %></a></header>
                         </article><!-- /article -->
-                        <article>
-                            <figure class="date"><i class="fa fa-file-o"></i>08-24-2014</figure>
-                            <header><a href="#">At 50, Center for the Education of Women celebrates a wider mission</a></header>
-                        </article><!-- /article -->
-                        <article>
-                            <figure class="date"><i class="fa fa-file-o"></i>08-24-2014</figure>
-                            <header><a href="#">Three U-Michigan scientists receive Sloan fellowships</a></header>
-                        </article><!-- /article -->
+                        <%end%>
+                        
                     </div><!-- /.section-content -->
                     <a href="" class="read-more">Todas las Noticias</a>
                 </section><!-- /.news-small -->

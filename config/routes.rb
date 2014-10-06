@@ -1,4 +1,10 @@
 Micropost::Application.routes.draw do
+  resources :noticia
+
+  resources :news
+
+  resources :activities
+
   resources :actividades
 
   get "static_pages/about"
