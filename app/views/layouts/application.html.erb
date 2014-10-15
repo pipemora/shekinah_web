@@ -23,7 +23,7 @@
 <div class="navigation-wrapper">
     <div class="secondary-navigation-wrapper">
         <div class="container">
-             <div class="navigation-contact pull-left">Atención a Usuarios:   <span class="opacity-70">Horario de 9:00 a.m. - 3:00 p.m. | Carrera 14 A No. 70-32 | Teléfonos 2172018 2128235</span></div>
+             <div class="navigation-contact pull-left">Atención a Usuarios:   <span class="opacity-70">Horario de 9:00 a.m. - 3:00 p.m. | Carrera 14 A No. 70-32 | Teléfonos 2172018 - 2172427</span></div>
         </div>
     </div><!-- /.secondary-navigation -->
 
@@ -54,7 +54,7 @@
                         </li>
                         
 
-                            <li><%= link_to 'Historia- Fines',static_pages_history_path%> 
+                            <li><%= link_to 'Historia',static_pages_history_path%> 
                                 </li>
 
                                 <li>                        <%= link_to 'Metodología', static_pages_metodoloy_path%> 
@@ -122,6 +122,7 @@
                 <div class="col-md-3 col-sm-4">
                     <aside>
                         <header><h4>Important Links</h4></header>
+
                         <ul class="list-links">
                             <li><a href="#">Home</a></li>
                             <li>   <%= link_to 'Metodología', static_pages_metodoloy_path%> </li>
@@ -144,7 +145,7 @@
                 </div><!-- /.col-md-3 -->
             </div><!-- /.row -->
         </div><!-- /.container -->
-        <div class="background"><img src="assets/img/background-city.png" class="" alt=""></div>
+        <div class="background"><%= image_tag "background-city.png"%></div>
     </section><!-- /#footer-content -->
 
     <section id="footer-bottom">

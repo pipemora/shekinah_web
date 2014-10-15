@@ -1,4 +1,6 @@
 Micropost::Application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   resources :noticia
 
   resources :news
@@ -6,6 +8,9 @@ Micropost::Application.routes.draw do
   resources :activities
 
   resources :actividades
+
+    get "admin/activities"
+
 
   get "static_pages/about"
   get "static_pages/history"
