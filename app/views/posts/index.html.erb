@@ -153,25 +153,7 @@
                 </section><!-- /.main-content -->
             </div><!-- /.col-md-6 -->
 
-            <div class="col-md-3">
-                <section class="news-small" id="news-small">
-                    <header>
-                        <h2>Noticias</h2>
-                    </header>
-                    <div class="section-content">
-                        
-                        <% @noticia.each do |noticium| %>
-                        
-                        <article>
-                            <figure class="date"><i class="fa fa-file-o"></i><%= noticium.created_at.strftime("%d %b. %Y") %></figure>
-                            <header><a href="#"><%= noticium.description %></a></header>
-                        </article><!-- /article -->
-                        <%end%>
-                        
-                    </div><!-- /.section-content -->
-                    <a href="" class="read-more">Todas las Noticias</a>
-                </section><!-- /.news-small -->
-            </div><!-- /.col-md-3 -->
+            
         </div><!-- /.row -->
     </div><!-- /.container -->
 </div>
