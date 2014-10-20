@@ -271,7 +271,7 @@ ul.list-links a:hover {
 }
 
 .block {
-  padding-top: 10px;
+  padding-top: 0px;
   padding-bottom: 40px;
   position: relative;
   overflow: hidden;
