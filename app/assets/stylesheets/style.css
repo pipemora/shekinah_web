@@ -271,7 +271,7 @@ ul.list-links a:hover {
 }
 
 .block {
-  padding-top: 0px;
+  padding-top: 30px;
   padding-bottom: 40px;
   position: relative;
   overflow: hidden;
@@ -1266,7 +1266,7 @@ ul.list-links a:hover {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
-  height: 600px;
+  height: 300px;
   overflow: hidden;
   border: none;
   margin: 0;
@@ -4309,4 +4309,12 @@ label.error:before {
     right: -15px;
     top: inherit;
   }
+}
+
+.lo {
+
+z-index: 1;
+position: absolute;
+top:100px;
+
 }
