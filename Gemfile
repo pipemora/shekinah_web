@@ -23,6 +23,8 @@ gem 'activeadmin', github: 'activeadmin'
 
 gem 'unicorn'
 
+gem 'puma'
+
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
