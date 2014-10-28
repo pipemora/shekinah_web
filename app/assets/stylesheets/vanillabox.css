@@ -109,7 +109,7 @@
 }
 
 .vnbx-close {
-  background-image: url("img/close0.png");
+  background-image: image-url("close0.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 32px;
@@ -120,16 +120,16 @@
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   .vnbx-close {
-    background-image: url("img/close0@2x.png");
+    background-image: image-url("close0@2x.png");
   }
 }
 
 .vnbx-close:hover {
-  background-image: url("img/close1.png");
+  background-image: image-url("close1.png");
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   .vnbx-close:hover {
-    background-image: url("img/close1@2x.png");
+    background-image: image-url("close1@2x.png");
   }
 }
 
@@ -142,7 +142,7 @@
 }
 
 .vnbx-prev {
-  background-image: url("img/prev0.png");
+  background-image: image-url("prev0.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 32px;
@@ -150,23 +150,23 @@
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   .vnbx-prev {
-    background-image: url("img/prev0@2x.png");
+    background-image: image-url("prev0@2x.png");
   }
 }
 
 .vnbx-prev:active,
 .vnbx-prev:hover {
-  background-image: url("img/prev1.png");
+  background-image: image-url("prev1.png");
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   .vnbx-prev:active,
   .vnbx-prev:hover {
-    background-image: url("img/prev1@2x.png");
+    background-image: image-url("prev1@2x.png");
   }
 }
 
 .vnbx-next {
-  background-image: url("img/next0.png");
+  background-image: image-url("next0.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 32px;
@@ -174,18 +174,18 @@
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   .vnbx-next {
-    background-image: url("img/next0@2x.png");
+    background-image: image-url("next0@2x.png");
   }
 }
 
 .vnbx-next:active,
 .vnbx-next:hover {
-  background-image: url("img/next1.png");
+  background-image: image-url("next1.png");
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   .vnbx-next:active,
   .vnbx-next:hover {
-    background-image: url("img/next1@2x.png");
+    background-image: image-url("next1@2x.png");
   }
 }
 
@@ -230,25 +230,25 @@
 }
 
 .vnbx-loading {
-  background-image: url("img/loading.gif");
+  background-image: image-url("loading.gif");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 32px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   .vnbx-loading {
-    background-image: url("img/loading@2x.gif");
+    background-image: image-url("loading@2x.gif");
   }
 }
 
 .vnbx-error {
-  background-image: url("img/error.png");
+  background-image: image-url("error.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 32px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   .vnbx-error {
-    background-image: url("img/error@2x.png");
+    background-image: image-url("error@2x.png");
   }
 }

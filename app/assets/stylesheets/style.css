@@ -2453,7 +2453,7 @@ th.header:before {
 }
 .navigation-wrapper .primary-navigation-wrapper header .navbar-brand:after {
   background-color: #ea6645;
-  background-image: url("../img/background-city.png");
+  background-image: image-url("background-city.png");
   background-position: 0;
   content: "";
   height: 215px;
