@@ -2122,6 +2122,7 @@ th.header:before {
   border: 2px solid whitesmoke;
   margin: 20px 0;
   padding: 20px;
+  background-color: #fff;
 }
 .element-framed li {
   margin-left: 10px;
