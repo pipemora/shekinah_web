@@ -1,5 +1,5 @@
 class StaticPagesController < ApplicationController
-  def about
+    def about
   end
 
   def history
@@ -21,5 +21,11 @@ class StaticPagesController < ApplicationController
   end
 
   def contact
+  end
+
+  def apro
+  end
+
+  def serv
   end
 end

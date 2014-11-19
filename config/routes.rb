@@ -1,4 +1,6 @@
 Micropost::Application.routes.draw do
+  get "static_pages/apro"
+  get "static_pages/serv"
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   resources :noticia

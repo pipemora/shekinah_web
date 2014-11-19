@@ -74,7 +74,7 @@ h1:after {
   content: "";
   height: 2px;
   left: 0;
-  width: 30px;
+  width: 300px;
   position: absolute;
   z-index: 0;
 }
@@ -3528,7 +3528,7 @@ label.error:before {
   margin-left: 15px;
 }
 .page-microsite .navigation-wrapper .secondary-navigation-wrapper {
-  background-color: whitesmoke;
+  background-color: #6cbae4;
   color: #252525;
   font-size: 11px;
   padding: 5px 0;
@@ -4321,6 +4321,7 @@ label.error:before {
 
 z-index: 1;
 position: absolute;
-top:50px;
+top:40px;
+left:0px;
 
 }
