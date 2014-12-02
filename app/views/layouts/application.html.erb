@@ -24,11 +24,17 @@
 
     <div class="secondary-navigation-wrapper">
         <div class="container">
-            <marquee >
-                <h4 font color="red">"APRENDO, APLICO Y SOBRE VALORES, PROYECTO EL ÉXITO EN MI VIDA Y EN EL ENTORNO DONDE ME ENCUENTRE"</h4>
+        <font color="red" size="4">
+            <marquee>
 
-                <h4 font color="red"> “LA PRESENCIA PERMANENTE DEL TODO PODEROSO DIOS”</h4>
+                "LA PRESENCIA PERMANENTE DEL TODO PODEROSO DIOS" <%= image_tag "spacer.png" %>
+                 "APRENDO, APLICO Y SOBRE VALORES, PROYECTO EL ÉXITO EN MI VIDA Y EN EL ENTORNO DONDE ME ENCUENTRE"
+
             </marquee>
+
+            
+
+        </font>
 
             
             
@@ -167,7 +173,7 @@
             <div class="row">
                 <div class="col-md-4">
                    <header><h4>Gimnasio Cristiano Shekinah</h4></header>
-                        <h5>La presencia permanente del todo poderoso Dios 
+                        <h5> "No enseñamos para el aula enseñamos para la vida"
                         </h5>
                         <div>
                             
@@ -197,7 +203,7 @@
                             <li><a href="#">Home</a></li>
                             <li>   <%= link_to 'Metodología', static_pages_metodoloy_path%> </li>
                             <li><%= link_to 'Preescolar', static_pages_sections_pre_path%></li>
-                            <li> <%= link_to 'Acción Educativa', static_pages_accion_path%></li>
+                            <li> <%= link_to 'Admisiones', static_pages_contact_path%></li>
                             <li> <%= link_to 'Actividades', activities_path%> </li>
                             <li><%= link_to 'Contáctenos', static_pages_contact_path%></li>
                         </ul>
@@ -248,6 +254,8 @@
   ga('send', 'pageview');
 
 </script>
+
+
 
 
   </body>
