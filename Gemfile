@@ -12,13 +12,9 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem "dynamic_sitemaps"
-
-group :development do
-  gem 'sqlite3'
-end
+gem 'pg'
 
 group :production do
-  gem 'pg'
   gem 'rails_12factor','0.0.2'
 end
 
